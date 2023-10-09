@@ -3,9 +3,13 @@ import LittleInputs from "../components/LittleInputs"
 import NewInput from "../components/NewInput"
 import TodoDone from "../components/TodoDone"
 
+import {u} from '../services/apiService'
+
+
+
 export default function App() {
 
-    
+    u.getPostListItems('123')
 
     const todoItemsArr = [
         {
